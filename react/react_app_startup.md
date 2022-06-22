@@ -21,6 +21,7 @@
 2. // webpack.config.js
 const path = require('path');
 
+```js
 module.exports = {
   entry: './frontend/entry.js',
   output: {
@@ -32,6 +33,7 @@ module.exports = {
     extensions: [".js", ".jsx", "*"] 
   }
 };
+```
 
 3. Make a `frontend/entry.js`
 
