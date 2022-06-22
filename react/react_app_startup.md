@@ -1,27 +1,27 @@
 ## SETUP
 
 1. create an `index.js`
-2. npm init -y 
+2. `npm init -y`
   - creates boiletplate package.json file
-3. npm install webpack 
-4. npm install -D webpack-cli 
+3. `npm install webpack`
+4. `npm install -D webpack-cli`
   - -D is the same as --save-dev 
   - we save this in dev because it's only the developer or us that uses the command line interface
 
 5. package-lock.json tracks react's dependencies
 6. add start script to package.json
-  - "start": "webpack --watch --mode=development"
+  `- "start": "webpack --watch --mode=development"`
 
 ## CUSTOMIZATION
 
 `webpack.config.js`
 1. create webpack.config.js
-  - touch wbpack.config.js
+  - `touch wbpack.config.js`
 
-2. // webpack.config.js
+2. webpack.config.js
+```js
 const path = require('path');
 
-```js
 module.exports = {
   entry: './frontend/entry.js',
   output: {
@@ -40,9 +40,10 @@ module.exports = {
 4. create an index.html and add
   - <script src="./bundle.js"></script>
 
-5. npm install @babel/core @babel/preset-env @babel/preset-react babel-loader react react-dom
+5. `npm install webpack webpack-cli react react-dom react-redux redux redux-logger @babel/core @babel/preset-env @babel/preset-react babel-loader`
 
 6. add to `webpack.config.js`
+```js
     module: {
     rules: [
       { 
@@ -57,21 +58,22 @@ module.exports = {
       }
     ]
   },
+```
   
   7. make a `.gitignore` in the root of your project and include the following files
-    node_modules
-    bundle.js
-    bundle.js.map
+    `node_modules`
+    `bundle.js`
+    `bundle.js.map`
 
 WE NEED TO CONNECT REACT!
 
 ## React
 
 EASY WAY:
-$ npx create-react-app app_name
-$ cd app_name
-$ npm start
-$ npm install @babel/core @babel/preset-env @babel/preset-react babel-loader react react-dom
+`$ npx create-react-app app_name`
+`$ cd app_name`
+`$ npm start`
+`npm install webpack webpack-cli react react-dom react-redux redux redux-logger @babel/core @babel/preset-env @babel/preset-react babel-loader`
 
 
 
