@@ -2,7 +2,7 @@
 
 1. create an `index.js`
 2. `npm init -y`
-  - creates boiletplate package.json file
+  - creates boilerplate package.json file
 3. `npm install webpack`
 4. `npm install -D webpack-cli`
   - -D is the same as --save-dev 
