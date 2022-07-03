@@ -38,7 +38,7 @@ module.exports = {
 3. Make a `frontend/entry.js`
 
 4. create an index.html and add
-  - <script src="./bundle.js"></script>
+  - `<script src="./bundle.js"></script>`
 
 5. `npm install webpack webpack-cli react react-dom react-redux redux redux-logger @babel/core @babel/preset-env @babel/preset-react babel-loader`
 
